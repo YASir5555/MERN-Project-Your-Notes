@@ -1,0 +1,123 @@
+.nav {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 2rem !important;
+  background-color: #fff;
+}
+[data-bs-theme='dark'] nav {
+  background-color: transparent;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand h2 {
+  margin-bottom: 0;
+}
+
+.mainLogo,
+.mainTitle,
+.langBtn {
+  color: #d375b9;
+}
+.mainLogo {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Right Nav */
+
+.rNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.langBtn,
+.darkBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+
+/* menu */
+
+.usercontroll a::after {
+  display: none;
+}
+
+.usercontroll div {
+  top: 4rem !important;
+  left: -15rem !important;
+  width: 16.5rem;
+  height: 13rem;
+  border: none;
+  border-radius: 0.9375rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+[dir='rtl'] .usercontroll div {
+  left: 0rem !important;
+}
+
+.userMenu {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.userMenu h3 {
+  color: #d375b9;
+  text-align: center;
+}
+
+.userMenu button {
+  color: #fff;
+  font-size: 1.25rem;
+  width: 14rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  margin-bottom: -1rem;
+}
+.userMenu .btn1 {
+  background: #7c8495;
+  border: none;
+}
+
+.btn1:hover,
+.btn2:hover {
+  color: #fff;
+}
+
+@media (max-width: 380px) {
+  .nav {
+    padding: 0.2rem 1rem !important;
+  }
+
+  .brand {
+    gap: 0.5rem;
+  }
+
+  .mainLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .rNav {
+    gap: 0;
+  }
+  .langBtn,
+  .darkBtn {
+    font-size: 1.5rem;
+  }
+}

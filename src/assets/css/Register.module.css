@@ -1,0 +1,103 @@
+.checkout {
+  display: flex;
+  width: 61rem;
+  height: 36rem;
+  overflow: hidden;
+  background: #fff;
+  align-items: center;
+  box-shadow: 6px 6px 15px 0px rgba(79, 79, 79, 0.25);
+}
+
+/* ////// Right Box  /////// */
+
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31rem;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightBox h1,
+.rightBox .link {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #d375b9;
+  text-decoration: none;
+}
+.rightBox form,
+.rightBox input,
+.rightBox .registerBtn,
+.rightBox .backBtn {
+  width: 100%;
+}
+
+.rightBox form {
+  padding: 0.5rem 2.5rem;
+}
+
+.rightBox input {
+  padding: 0.5625rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color, rgba(60, 66, 87, 0.12));
+  background: var(--white, #fff);
+  height: 3rem;
+}
+
+.rightBox .registerBtn,
+.rightBox .backBtn {
+  color: var(--primary-grey-6, #fff);
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightBox .backBtn {
+  background-color: #7c8495;
+  border: transparent;
+  margin-bottom: 0;
+}
+
+.rightBox .registerBtn:hover,
+.rightBox .backBtn:hover {
+  color: var(--primary-grey-6, #fff);
+}
+
+.rightBox p {
+  text-align: center;
+  margin: 0;
+}
+
+.rightBox svg {
+  margin-left: 0.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  background-color: transparent;
+  border: none;
+}
+
+[data-bs-theme='dark'] .checkout {
+  background-color: #25273d;
+  box-shadow: none;
+}
+[data-bs-theme='dark'] .rightBox input {
+  background-color: #25273d;
+  box-shadow: none;
+  border: 1px solid #393a4b;
+}

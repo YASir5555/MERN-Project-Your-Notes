@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap');
+// //////
+
+$primary: #d375b9;
+
+// import bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+  --bs-body-font-family: 'Josefin Sans', sans-serif;
+}

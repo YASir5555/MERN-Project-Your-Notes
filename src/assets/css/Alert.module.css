@@ -1,0 +1,10 @@
+.message {
+  background-color: #e5acd5;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
+[data-bs-theme='dark'] .message {
+  color: #393a4b;
+}

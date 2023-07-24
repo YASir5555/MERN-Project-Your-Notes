@@ -1,0 +1,9 @@
+.mainBg {
+  background: url(../images/MainCover.png),
+    lightgray -265389.511px 1671.059px / 21741.606% 11808.408% no-repeat;
+
+  height: 20vh;
+  background-size: cover;
+  background-position: bottom;
+  background-color: white;
+}

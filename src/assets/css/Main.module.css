@@ -1,0 +1,165 @@
+/* /////////////////////////// Main   //////////////////////////////// */
+
+.mainSection {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  padding-top: 3rem;
+  width: 34rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.createtask,
+.taskArea {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.125rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+.createtask {
+  margin-bottom: 2rem;
+}
+
+.checked,
+.unchecked {
+  cursor: pointer;
+}
+
+.input {
+  border: none;
+  width: 100%;
+}
+.input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #9495a5;
+}
+.deleteBtn {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border: none;
+}
+
+.todos {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+.task {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #e3e4f1;
+  border-radius: 0.5rem;
+}
+
+.taskText {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.Btns {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 0.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.Btns p {
+  margin: 0;
+}
+
+.Btns button {
+  color: #9495a5;
+  background: transparent;
+  border: none;
+}
+
+.checked + p {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.Btns .activeFilter {
+  color: #d375b9;
+}
+
+.btnsFilter {
+  display: flex;
+}
+.btnsFilterMobile {
+  display: none;
+}
+
+@media (max-width: 380px) {
+  .app {
+    padding: 0rem 1rem;
+    padding-top: 7rem;
+  }
+
+  .Btns {
+    font-size: 1rem;
+  }
+  .btnsFilter {
+    display: none;
+  }
+  .btnsFilterMobile {
+    display: block;
+  }
+}
+
+/* ///////////////////DARK MODE////////////////////// */
+
+[data-bs-theme='dark'] .Btns {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .createtask {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .input {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .unchecked {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .taskArea {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .deleteBtn {
+  background-color: #25273d;
+  box-shadow: none;
+}
+
+[data-bs-theme='dark'] .task {
+  background-color: #25273d;
+  box-shadow: none;
+  border-bottom: 1px solid #393a4b;
+}
